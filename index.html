@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
+            }
+
+            body {
+                background-color: #131626;
+                font-family: 'Poiret One', cursive;
+            }
+
+            a {
+                text-decoration: none;
+                text-transform: none;
+                font-size: 20px;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            h1, a {
+                color: #3ab5e6;
+            }
+
+            .row {
+                width: 100%;
+                margin: 20px 0 50px ;
+            }
+
+            .col-30 {
+                display: inline-block;
+                width: 30%;
+                padding: 0 10px;
+            }
+
+            .col-45 {
+                display: inline-block;
+                width: 45%;
+                text-align: center;
+            }
+
+            .cards {
+                text-align: center;
+            }
+
+            .flip {
+                width: 80%;
+                height: 700px;
+                color: transparent;
+            }
+
+            .front {
+                width: 100%;
+                height: 100%;
+                border: 2px solid #3ab5e6;
+                border-radius: 5px;
+            }
+            
+            .back {
+                width: 100%;
+                height: 100%;
+                background-color: #ffffff;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="row">
+            <h1 class="col-45">Logo</h1>
+            <a href="#" class="col-45">Sign Up</a>
+        </header>
+
+        <div class="row cards">
+            <div class="col-30"div>
+                <div class="flip">
+                    <div class="front"> 
+                        <img src="/path/to/image.jpg" alt="" />
+                    </div> 
+                    <div class="back">
+                    </div> 
+                </div>
+            </div>
+            <div class="col-30"div>
+                <div class="flip">
+                    <div class="front"> 
+                        <img src="/path/to/image.jpg" alt="" />
+                    </div> 
+                    <div class="back">
+                    </div> 
+                </div>
+            </div>
+            <div class="col-30"div>
+                <div class="flip">
+                    <div class="front"> 
+                        <img src="/path/to/image.jpg" alt="" />
+                    </div> 
+                    <div class="back">
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+            $(".flip").flip({
+                trigger: 'click'
+            });
+        });
+    </script>
+</html>
